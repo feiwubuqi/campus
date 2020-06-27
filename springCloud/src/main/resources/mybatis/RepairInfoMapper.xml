@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.domain.repository.IRepairInfoRepository">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.campus.domain.model.RepairInfo">
+        <id column="TASK_ID" property="taskId" />
+        <result column="PROBLEM_DESC" property="problemDesc" />
+        <result column="HOUSE_NO" property="houseNo" />
+        <result column="REPORT_TIME" property="reportTime" />
+        <result column="MOBILE" property="mobile" />
+        <result column="REPAIR_TIME" property="repairTime" />
+        <result column="REMARK" property="remark" />
+        <result column="IMG_ADDRESS" property="imgAddress" />
+        <result column="PROCESS_STATUS" property="processStatus" />
+        <result column="ACCOUNT_SNO" property="accountSno" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PROBLEM_DESC, HOUSE_NO, REPORT_TIME, MOBILE, REPAIR_TIME, REMARK, IMG_ADDRESS, PROCESS_STATUS, ACCOUNT_SNO, TASK_ID
+    </sql>
+
+</mapper>

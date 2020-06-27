@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: campus-service
+  datasource:
+    url: jdbc:mysql://192.168.75.81:3306/dormitory_manage?characterEncoding=utf8
+    username: root
+    password: root123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10080/eureka
+    instance:
+      prefer-ip-address: true
+      ip-address: 127.0.0.1

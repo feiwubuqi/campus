@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.domain.repository.INewsInfoRepository">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.campus.domain.model.NewsInfo">
+        <id column="SEQUENCE_ID" property="sequenceId" />
+        <result column="TITLE" property="title" />
+        <result column="AUTHOR" property="author" />
+        <result column="FROM_ADDRESS" property="fromAddress" />
+        <result column="TIME" property="time" />
+        <result column="COUNT_NUM" property="countNum" />
+        <result column="CONTENT" property="content" />
+        <result column="IMG_ADDRESS" property="imgAddress" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TITLE, AUTHOR, FROM_ADDRESS, TIME, COUNT_NUM, CONTENT, SEQUENCE_ID,IMG_ADDRESS
+    </sql>
+
+</mapper>

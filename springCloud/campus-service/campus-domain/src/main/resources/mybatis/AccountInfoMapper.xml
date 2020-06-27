@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.domain.repository.IAccountInfoRepository">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.campus.domain.model.AccountInfo">
+        <id column="ACCOUNT_SNO" property="accountSno" />
+        <result column="ACCOUNT_NAME" property="accountName" />
+        <result column="ACCOUNT_PWD" property="accountPwd" />
+        <result column="ACADEMY" property="academy" />
+        <result column="MOBILE" property="mobile" />
+        <result column="GRADE" property="grade" />
+        <result column="IMG_ADDRESS" property="imgAddress" />
+        <result column="NATIVE_PLACE" property="nativePlace" />
+<!--        <result column="CERY_NO" property="ceryNo" />-->
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ACCOUNT_SNO, ACCOUNT_NAME, ACCOUNT_PWD, ACADEMY, MOBILE, GRADE, IMG_ADDRESS, NATIVE_PLACE
+--         , CERY_NO
+</sql>
+
+</mapper>

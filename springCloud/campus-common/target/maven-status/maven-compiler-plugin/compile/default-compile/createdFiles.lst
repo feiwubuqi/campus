@@ -1,0 +1,4 @@
+com\campus\common\utils\CookieUtils.class
+com\campus\common\utils\NumberUtils.class
+com\campus\common\utils\IdWorker.class
+com\campus\common\utils\JsonUtils.class

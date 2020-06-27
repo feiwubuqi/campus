@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="campus-common" />
+        <module name="campus-gateway" />
+        <module name="campus-domain" />
+        <module name="campus-interface" />
+        <module name="campus-registry" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="campus-common" options="-parameters" />
+      <module name="campus-domain" options="-parameters" />
+      <module name="campus-gateway" options="-parameters" />
+      <module name="campus-interface" options="-parameters" />
+      <module name="campus-registry" options="-parameters" />
+      <module name="campus-service" options="-parameters" />
+      <module name="campusLife" options="" />
+    </option>
+  </component>
+</project>
